@@ -21,7 +21,8 @@ KEEPALIVED_INTERFACE=eth0
 # - optional, but if not set it will be generated
 # Note: 8 Chars
 #
-AUTH_PASSWORD=""
+# e.g. 12345678
+AUTH_PASSWORD="12345678"
 ```
 
 
@@ -54,5 +55,5 @@ GPL-2
 ## Copyright
 
 ```
-Copyright (c) 2018 Thorsten Schifferdecker
+Copyright (c) 2018,2019 Thorsten Schifferdecker
 ```
