@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-RUN apk -U add keepalived
+RUN apk --no-cache -U add keepalived
 
 COPY scripts/keepalived.conf.tpl /etc/keepalived/
 COPY scripts/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
