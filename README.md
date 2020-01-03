@@ -1,6 +1,8 @@
-# keepalived for a high-available kubernetes controlplane
+# keepalived for a highly available Kubernetes control plane
 
-This Docker Images is used for StaticPod on an Kubernetes Controlplane.
+[![Build Status](https://cloud.drone.io/api/badges/curx/keepalived-k8scp/status.svg)](https://cloud.drone.io/curx/keepalived-k8scp)
+
+This OCI container image is used for a StaticPod on Kubernetes Controlplane.
 
 ## Available environment variables
 
@@ -9,13 +11,13 @@ This Docker Images is used for StaticPod on an Kubernetes Controlplane.
 #   - mandatory
 #
 # e.g. 192.168.1.11
-KEEPALIVED_VIP=192.168.1.11
+KEEPALIVED_VIP="192.168.1.11"
 
 # Configure the network interface for keepalived, KEEPALIVED_INTERFACE
 #   - mandatory
 #
 # e.g. eth0
-KEEPALIVED_INTERFACE=eth0
+KEEPALIVED_INTERFACE="eth0"
 
 # Configure the password for keepalived, AUTH_PASSWORD
 # - optional, but if not set it will be generated
@@ -55,5 +57,5 @@ GPL-2
 ## Copyright
 
 ```
-Copyright (c) 2018,2019 Thorsten Schifferdecker
+Copyright (c) 2018 Thorsten Schifferdecker
 ```
