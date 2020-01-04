@@ -4,6 +4,7 @@ def main(ctx):
     'image': ctx.repo.name,
     'arches': [
       'amd64',
+      'arm32v6',
     ],
     'versions': [
       {
