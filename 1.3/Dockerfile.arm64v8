@@ -1,0 +1,13 @@
+FROM alpine:3.11@sha256:892105a25acfbcb693eba42428b5a7daa63e20a1b1c85bd225ef36f447db9182
+
+LABEL maintainer="Thorsten Schifferdecker https://github.com/curx" \
+  org.label-schema.vendor="Thorsten Schifferdecker" \
+  org.label-schema.name="keepalived-k8scp" \
+  org.label-schema.version="1.3" \
+  org.label-schema.schema-version="1.0"
+
+ENTRYPOINT ["entrypoint.sh"]
+
+RUN apk -U --no-cache add keepalived
+
+COPY ./overlay ./overlay-arm64v8 /
