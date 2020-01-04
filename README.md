@@ -8,13 +8,13 @@ This OCI container image is used for a StaticPod on Kubernetes Controlplane.
 
 ```
 # Configure the IP Address, KEEPALIVED_VIP
-#   - mandatory
+# - mandatory
 #
 # e.g. 192.168.1.11
 KEEPALIVED_VIP="192.168.1.11"
 
 # Configure the network interface for keepalived, KEEPALIVED_INTERFACE
-#   - mandatory
+# - mandatory
 #
 # e.g. eth0
 KEEPALIVED_INTERFACE="eth0"
@@ -32,11 +32,10 @@ AUTH_PASSWORD="12345678"
 
 ```bash
 docker run \
-  -d \
   -e KEEPALIVED_VIP="192.168.1.1" \
   -e KEEPALIVED_INTERFACE="eth0" \
-  -e AUTH_PASSWORD="12345678"
-  <registryhost>/<image>:<tag>
+  -e AUTH_PASSWORD="12345678" \
+  ...
 ```
 
 ## Contributing
