@@ -1,4 +1,4 @@
-FROM arm32v6/alpine:3.12@sha256:71465c7d45a086a2181ce33bb47f7eaef5c233eace65704da0c5e5454a79cee5
+FROM arm32v6/alpine:3.13@sha256:ea73ecf48cd45e250f65eb731dd35808175ae37d70cca5d41f9ef57210737f04
 
 LABEL maintainer="Thorsten Schifferdecker https://github.com/curx" \
   org.label-schema.vendor="Thorsten Schifferdecker" \
